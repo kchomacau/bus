@@ -16,10 +16,10 @@ localStorage.setItem("DATA_e_r6Ax",'##8/Aug/2015 9:00-17:30<br>This route skips 
 localStorage.setItem("DATA_e_r7Ay",'##Since 4/Jun/2015<br>"Estrada do Arco" stop is suspended, please use "Istmo F. Amaral/Triangle Garden" stop.');localStorage.setItem("DATA_r7Ay",'##2015年6月4日起<br>不再行經「拱形馬路」站，請使用「關閘馬路/三角花園」站上落。');
 localStorage.setItem("DATA_e_r7y",'##Since 4/Jun/2015<br>"Estrada do Arco" stop is suspended, please use "Istmo F. Amaral/Triangle Garden" stop.');localStorage.setItem("DATA_r7y",'##2015年6月4日起<br>不再行經「拱形馬路」站，請使用「關閘馬路/三角花園」站上落。');
 
-if((vers!="v62")&&(vers!="v63")){
+if((vers!="v63")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
-    localStorage.setItem("udmacau",link+"<b>澳門出行易 V4.2.1</b><u>提升用戶體驗，更快、更易用！</u><div>檢視</div></a>");
-    localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V4.2.1</b><u>Much Better User Experience!</u><div>VIEW</div></a>");
+    localStorage.setItem("udmacau",link+"<b>澳門出行易 V4.2.2</b><u>快速搜尋加入地圖模式</u><div>檢視</div></a>");
+    localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V4.2.2</b><u>Add map mode to Quick Enquiry</u><div>VIEW</div></a>");
     window.location.reload();
 }
