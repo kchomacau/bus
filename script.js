@@ -6,6 +6,7 @@ localStorage.removeItem("udmacau_e");
 localStorage.setItem("DATA_e_r2x",'##2015/11/25 - ?<br>Bus stop "VENCESLAU MORAIS/EDF. AIRWAY" is added for Barra bound temporarily.');localStorage.setItem("DATA_r2x",'##2015/11/25 - ?<br>往媽閣方向臨時停靠「慕拉士/飛通大廈」站');
 localStorage.setItem("DATA_e_r6Ax",'##2015/11/25 - ?<br>Bus stop "VENCESLAU MORAIS/EDF. AIRWAY" is added for Barra bound temporarily.');localStorage.setItem("DATA_r6Ax",'##2015/11/25 - ?<br>往媽閣方向臨時停靠「慕拉士/飛通大廈」站');
 
+
 if((vers!="v66")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
