@@ -15,3 +15,5 @@ if((vers!="v67")){
     localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V4.2.6</b><u>Make Text Larger</u><div>VIEW</div></a>");
     window.location.reload();
 }
+
+
