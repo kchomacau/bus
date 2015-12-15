@@ -13,6 +13,9 @@ localStorage.setItem("DATA_e_M149",'##2015/Dec/17-31<br>This stop is suspended t
 localStorage.setItem("DATA_e_r6Ax",'##Since 2015/Nov/25<br>Bus stop "VENCESLAU MORAIS/EDF. AIRWAY" is added for Hospital S. Januario bound temporarily.<br>&nbsp;<br>2015/Dec/17-31<br>Bus stop "YUET WAH COLLEGE" is suspended for P. SERENIDADE bound temporarily. Passengers may use "PAVILHÃO POLIDESPORTIVO TAP SEAC" instead.');localStorage.setItem("DATA_r6Ax",'##2015年11月25日起<br>往山頂醫院方向臨時停靠「慕拉士/飛通大廈」站<br>&nbsp;<br>2015年12月17日至31日<br>往順景廣場方向不停靠「粵華中學」站，請使用「塔石體育館」站上落。');
 
 
+
+
+
 if((vers!="v67")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
