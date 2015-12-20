@@ -27,6 +27,8 @@ localStorage.setItem("DATA_M149",'##2015年12月17日至31日<br>本站停用，
 localStorage.setItem("DATA_e_r6Ax",'##Since 2015/Nov/25<br>Bus stop "Venceslau Morais/Airway Bldg." is added for HOSPITAL S. JANUÁRIO bound temporarily.<br>&nbsp;<br>2015/Dec/17-31<br>Bus stop "Yuet Wah College" is suspended for P. SERENIDADE bound temporarily. Passengers may use "Tap Seac Multi-sports Pavilion" (Beside Tap Seac Plaza) stop instead.');
 localStorage.setItem("DATA_r6Ax",'##2015年11月25日起<br>往山頂醫院方向臨時停靠「慕拉士/飛通大廈」站<br>&nbsp;<br>2015年12月17日至31日<br>往順景廣場方向不停靠「粵華中學」站，請使用「塔石體育館」（舊愛都酒店）站上落。');
 
+localStorage.setItem("DATA_e_M247",'##Temporary Suspension (From 2015/Dec/20 13:00)<br>This stop is suspended temporarily.');localStorage.setItem("DATA_M247",'##臨時改道(2015年12月20日13:00起至道路解封)<br>本站臨時停用。');
+localStorage.setItem("DATA_e_M235",'##Temporary Suspension (From 2015/Dec/20 13:00)<br>This stop is suspended temporarily.');localStorage.setItem("DATA_M235",'##臨時改道(2015年12月20日13:00起至道路解封)<br>本站臨時停用。');
 
 
 if((vers!="v67")){
