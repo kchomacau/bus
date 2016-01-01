@@ -3,8 +3,8 @@ passedt();
 localStorage.removeItem("udmacau");
 localStorage.removeItem("udmacau_e");
 
-chineseWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">澳門出行易謹祝您新年快樂！</div>';
-englishWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">Macau EasyGo wishes you all the best!!</div>';
+chineseWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">澳門出行易祝您新年快樂！</div>';
+englishWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">Macau EasyGo wishes you a happy new year!!</div>';
 
 
 localStorage.setItem("DATA_e_r2x",'##Since 2015/Nov/25<br>Bus stop "Venceslau Morais/Airway Bldg." is added for BARRA bound temporarily.');localStorage.setItem("DATA_r2x",'##2015年11月25日起<br>往媽閣方向臨時停靠「慕拉士/飛通大廈」站');
