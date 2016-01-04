@@ -3,8 +3,9 @@ passedt();
 localStorage.removeItem("udmacau");
 localStorage.removeItem("udmacau_e");
 
-chineseWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">澳門出行易祝您新年快樂！</div>';
-englishWish='<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">Macau EasyGo wishes you a happy new year!!</div>';
+
+chineseWish='<div style="font-size:17px;line-height:110%;background:#12A832;border-top:5px solid #0D962A;display:block;clear:both;color:#FFEAFD;padding:14px 10px 20px;font-weight:bold;">感謝您對澳門出行易的支持！您的寶貴意見，助我努力向前，歡迎您在 Google Play 留下寶貴意見！</div>';
+englishWish='<div style="font-size:17px;line-height:110%;background:#12A832;border-top:5px solid #0D962A;display:block;clear:both;color:#FFEAFD;padding:14px 10px 20px;font-weight:bold;">Thanks for using Macau EasyGo. Please leave your words on Google Play for advice. I am waiting your words!</div>';
 
 
 localStorage.setItem("DATA_e_r2x",'##Since 2015/Nov/25<br>Bus stop "Venceslau Morais/Airway Bldg." is added for BARRA bound temporarily.');localStorage.setItem("DATA_r2x",'##2015年11月25日起<br>往媽閣方向臨時停靠「慕拉士/飛通大廈」站');
