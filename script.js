@@ -3,8 +3,16 @@ passedt();
 localStorage.removeItem("udmacau");
 localStorage.removeItem("udmacau_e");
 
-localStorage.setItem("DATA_e_r30x",'##2015/Dec/14 - 2016/Feb/11<br>Bus stop "Av. Kwong Tung/Jockey Club" is skipped.');localStorage.setItem("DATA_r30x",'##2015年12月14日至2016年2月11日<br>不停靠「廣東大馬路/馬會」站');
-localStorage.setItem("DATA_e_r3Xx",'##From now on<br>Route 3X is also available in 20H00-23H00, buses depart every 6-10 min.');localStorage.setItem("DATA_r3Xx",'##即日起<br>本線新增晚上8時至11時的服務，約6至10分鐘開出一班車');
+localStorage.setItem("DATA_e_r30x",'##2015/Dec/14 - 2016/Feb/11<br>Bus stop "Av. Kwong Tung/Jockey Club" is skipped.');localStorage.setItem("DATA_r30x",'##2015年12月14日至2016年2月11日<br>不停靠「廣東大馬路/馬會」站。');
+localStorage.setItem("DATA_e_r3Xx",'##From now on, <br>Route 3X is also available in 20H00-23H00, buses depart every 6-10 min.');localStorage.setItem("DATA_r3Xx",'##即日起，<br>本線新增晚上8時至11時的服務，約6至10分鐘開出一班車。');
+localStorage.setItem("DATA_e_M265",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M265",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M264",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M264",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M266",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M266",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M267",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M267",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M178",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M178",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M177",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M177",'##2016年2月10日17H00-23H00<br>本站停用。');
+localStorage.setItem("DATA_e_M182",'##2016/Feb/10 17H00-23H00<br>This stop is suspended.');localStorage.setItem("DATA_M182",'##2016年2月10日17H00-23H00<br>本站停用。');
+
 localStorage.setItem("DATA_e_r5Xx",'##Correction:<br>Route 5X runs between Fai Chi Kei and <del>Hospital S. Januario</del> N.A.P.E.');
 
 
