@@ -28,6 +28,7 @@ localStorage.setItem("DATA_e_rMT2x",'##From 16/Mar/2016<br>"Avenida do Estadio" 
 localStorage.setItem("DATA_e_rMT3x",'##From 16/Mar/2016<br>"Avenida do Estadio" stop is suspended. You may use "Rotunda da Piscina Olimpica" stop instead.');localStorage.setItem("DATA_rMT3x",'##2016年3月16日起<br>本線不停靠「運動場道」站，您可使用「奧林匹克游泳館圓形地」站上落。');
 localStorage.setItem("DATA_e_rMT4x",'##From 16/Mar/2016<br>"Avenida do Estadio" stop is suspended. You may use "Rotunda da Piscina Olimpica" stop instead.');localStorage.setItem("DATA_rMT4x",'##2016年3月16日起<br>本線不停靠「運動場道」站，您可使用「奧林匹克游泳館圓形地」站上落。');
 
+/*
 if((vers!="v68")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
@@ -35,3 +36,4 @@ if((vers!="v68")){
     localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V4.3</b><u>Update 24 Routes</u><div>VIEW</div></a>");
     window.location.reload();
 }
+*/
