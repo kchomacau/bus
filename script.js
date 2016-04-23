@@ -34,11 +34,11 @@ localStorage.setItem("DATA_e_r9x",'##From 6/Apr/2016<br>"Largo do Pagode da Barr
 localStorage.setItem("DATA_e_rN5x",'##From now on,<br>Rt N5 becomes a route back and forth Seac Pai Van and Lisboa, no stop is located at airport nor the two ferry terminal.');localStorage.setItem("DATA_rN5x",'##即日起<br>本線改為往返石排灣至亞馬喇的雙向路線，不再行經機場及各碼頭。');
 
 localStorage.setItem("DATA_e_r18y",'##From 6/Apr/2016<br>"Largo do Pagode da Barra" and "Alm. Sergio/Barra" stop is suspended. Go forward (direction against A-Ma Temple), Riviera Macau McDonald\'s stop for aboarding.<br>&nbsp;<br>15/Apr - 4/May/2016<br>"Rua das Estalagens" and "R. Cinco Outubro" stop are suspended. You may use the temp. stop located at the intersection of Rua dos Faitiões and Rua da Tercena.');localStorage.setItem("DATA_r18y",'##2016年4月6日起<br>「媽閣廟前地」及「河邊新街/媽閣」站停用，請往前行(往司打口方向)至凱泉灣麥當勞門前站點乘車。<br>&nbsp;<br>2016年4月15日至5月4日<br>「草堆街」站及「十月初五街」站停用，您可使用快艇頭街與果欄街交界的臨時站上落。');
-
+/*
 if((vers!="v69")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
     localStorage.setItem("udmacau",link+"<b>澳門出行易 V4.3.1</b><u>更新路線</u><div>檢視</div></a>");
     localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V4.3.1</b><u>Route Info Updated</u><div>VIEW</div></a>");
     window.location.reload();
-}
+}*/
