@@ -1,3 +1,11 @@
+window.android.getuserid();	// firmuser
+
+function firmuser(userid){
+	if(userid===""){
+		loadScript("http://kchomacau.github.io/bus/getusernum.js",function(){});
+	}
+}
+
 passedt();
 
 localStorage.removeItem("udmacau");
