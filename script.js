@@ -3,6 +3,9 @@ passedt();
 localStorage.removeItem("udmacau");
 localStorage.removeItem("udmacau_e");
 
+
+
+
 if((vers!="v79")){
     var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 
