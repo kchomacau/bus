@@ -1,13 +1,15 @@
-passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");function checkVar(){
+passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 	
 if(vers!="v82"){
 
-	var ver = "4.4.2"
-	var chi = "路線更新";
-	var eng = "Update Routes"
+	var tmp_js = {
+		ver: "4.4.2",
+		chi: "路線更新",
+		eng: "Update Routes"
+	};
 
-var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+ver+"</b><u>"+chi+"</u><div>檢視</div></a>");localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+ver+"</b><u>"+eng+"</u><div>VIEW</div></a>");
-window.location.reload();}}checkVar();function setTmpData(){var arr = [
+var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>");
+window.location.reload();}var arr = [
 	
 	{
 		r:["r5Xx"],
@@ -41,4 +43,4 @@ window.location.reload();}}checkVar();function setTmpData(){var arr = [
 	}
 	
 
-];for(var i=0;i<arr.length;i++){for(var j=0;j<arr.r.length;j++){localStorage.setItem("DATA_e_"+arr.r[j], '##'+arr.e);localStorage.setItem("DATA_" +arr.r[j], '##'+arr.c);}}}setTmpData();
+];for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
