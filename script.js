@@ -8,6 +8,10 @@ if(vers!="v82"){
 		eng: "Update Routes"
 	};
 
+
+var mt32X = "，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。";
+var mt32X_e = " in <strong>19:00-23:00</strong> on the following days: <strong>2016 Nov 11-13, 17-20 and 25-27</strong>. Bus departs from Macau Tower every 10-15 mins appr.";
+
 var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>");
 window.location.reload();}var arr = [
 	
@@ -48,13 +52,13 @@ window.location.reload();}var arr = [
 	},
 	{
 		r:["M177","M181","M179"],
-		e:"<strong>New route available</strong><br>You may take Rt 32X to Praca Ferreira Amaral in 19:00-23:00 on the following days: 2016 Nov 11-13, 17-20 and 25-27. Bus departs from Macau Tower every 10-15 mins appr",
-		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往亞馬喇前地，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。"
+		e:"<strong>New route available</strong><br>You may take <strong>Rt 32X</strong> to Praca Ferreira Amaral" + mt32X_e,
+		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往亞馬喇前地" + mt32X
 	},
 	{
 		r:["M172B","M187","M199"],
-		e:"<strong>New route available</strong><br>You may take Rt 32X to Macau Tower in 19:00-23:00 on the following days: 2016 Nov 11-13, 17-20 and 25-27. Bus departs from Macau Tower every 10-15 mins appr",
-		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往旅遊塔，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。"
+		e:"<strong>New route available</strong><br>You may take <strong>Rt 32X</strong> to Macau Tower" + mt32X_e,
+		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往旅遊塔" + mt32X
 	}
 	
 
