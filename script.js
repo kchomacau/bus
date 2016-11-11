@@ -33,13 +33,28 @@ window.location.reload();}var arr = [
 	},
 	{
 		r:["rMT5x"],
-		e:"<strong>Timetable changed</strong><br><font color=crimson>No service on Sundays and public holidays.</font>. Service hours (Mon to Sat) 07:00-21:00. Departs every 8-25 mins appr.",
-		c:"<strong>班次調整</strong><br><font color=crimson>星期日及公眾假期停駛</font>，星期一至六改為 07:00-21:00 約每8-25分鐘開出一班。"
+		e:"<strong>Timetable changed<br><font color=crimson>No service on Sundays and public holidays.</font></strong>. Service hours (Mon to Sat) 07:00-21:00. Departs every 8-25 mins appr.",
+		c:"<strong>班次調整<br><font color=crimson>星期日及公眾假期停駛</font></strong>，星期一至六改為 07:00-21:00 約每8-25分鐘開出一班。"
 	},
 	{
 		r:["rN4x","rN4y"],
 		e:"<strong>Timetable changed</strong><br>Departs every 20 mins appr.",
 		c:"<strong>班次調整</strong><br>改為約每20分鐘開出一班。"
+	},
+	{
+		r:["T365"],
+		e:"Nov 12 2016 10:00-20:00<br>This stop is suspended. You may use \"Roundabout of Olympic Aquatic Centre\" stop.",
+		c:"2016年11月12日 10:00-20:00<br>本站停用，您可使用「奧林匹克游泳館圓形地」站上落。"
+	},
+	{
+		r:["M177","M181","M179"],
+		e:"<strong>New route available</strong><br>You may take Rt 32X to Praca Ferreira Amaral in 19:00-23:00 on the following days: 2016 Nov 11-13, 17-20 and 25-27. Bus departs from Macau Tower every 10-15 mins appr",
+		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往亞馬喇前地，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。"
+	},
+	{
+		r:["M172B","M187","M199"],
+		e:"<strong>New route available</strong><br>You may take Rt 32X to Macau Tower in 19:00-23:00 on the following days: 2016 Nov 11-13, 17-20 and 25-27. Bus departs from Macau Tower every 10-15 mins appr",
+		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往旅遊塔，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。"
 	}
 	
 
