@@ -27,10 +27,22 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
+tmpInt2 = undefined;
+
 tmpInt = window.setInterval(
 	function(){
 		if(rArray[0].ref){
 			window.clearInterval(tmpInt);
+			tmpInt2 = window.setInterval(
+				function(){
+					var u_el = document.querySelectorAll(".rlt_div u");
+					for(var i=0;i<u_el.length;i++){
+						var text = u_el[i].innerHTML.split(", ");
+						u_el[i].innerHTML = "(" + text[1];
+					}
+				}
+				,100
+			);
 			show(0);
 		}
 	},200
