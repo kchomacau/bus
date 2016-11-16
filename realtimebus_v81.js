@@ -30,8 +30,8 @@ function show(i){
 tmpInt = window.setInterval(
 	function(){
 		if(rArray[0].ref){
-			show(0);
 			window.clearInterval(tmpInt);
+			show(0);
 		}
 	},200
 );
