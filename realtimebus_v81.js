@@ -27,7 +27,7 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-var tmpInt = window.setInterval(
+tmpInt = window.setInterval(
 	function(){
 		if(rArray[0].ref){
 			show(0);
