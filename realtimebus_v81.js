@@ -27,4 +27,11 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-window.setTimeout(function(){show(0)},2000);
+var tmpInt = window.setInterval(
+	function(){
+		if(rArray[0].ref){
+			show(0);
+			window.clearInterval(tmpInt);
+		}
+	},200
+);
