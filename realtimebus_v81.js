@@ -36,7 +36,7 @@ tmpInt = window.setInterval(
 			tmpInt2 = window.setInterval(
 				function(){
 					var u_el = document.querySelectorAll(".rlt_div u");
-					for(var i=0;i<u_el.length;i++){
+					for(var i=1;i<u_el.length;i+=2){
 						var text = u_el[i].innerHTML.split(", ");
 						u_el[i].innerHTML = "(" + text[1];
 					}
