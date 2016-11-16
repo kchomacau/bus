@@ -26,3 +26,5 @@ function show(i){
 	fetch_busData();
 	interval = window.setInterval(fetch_busData, 10000);
 }
+
+show(0);
