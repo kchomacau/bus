@@ -19,7 +19,7 @@ function show(i){
 	trcuser_pro = function(cata,page,lang,ver){
 		mixpanel.track("Page View",{"Cata":cata,"Page":page,"Lang":lang,"Vers":vers,"User":userCode,"AndroidVersion":ver});
 	}
-	document.querySelector(".oroute").innerHTML += "<pre><small>Testing Log: Getting Bus Data r" + trc_rt + " / "+document.querySelectorAll(".have_bus u").length+"</small></pre>";
+	document.querySelector(".oroute").innerHTML += "<pre><small>Testing Log: Getting Bus Data r" + trc_rt + " / "+document.querySelectorAll(".have-bus u").length+"</small></pre>";
 	trcuser("realtimebus", trc_page+"@"+trc_stop_id, trc_lgtext);
 
 	replace_or_init(false);
@@ -35,7 +35,7 @@ tmpInt = window.setInterval(
 			window.clearInterval(tmpInt);
 			tmpInt2 = window.setInterval(
 				function(){
-					var u_el = document.querySelectorAll(".have_bus u");
+					var u_el = document.querySelectorAll(".have-bus u");
 					for(var i=1;i<u_el.length;i+=2){
 						var text = u_el[i].innerHTML.split(", ");
 						u_el[i].innerHTML = "(" + text[1];
