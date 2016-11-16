@@ -38,7 +38,9 @@ tmpInt = window.setInterval(
 					var u_el = document.querySelectorAll(".have-bus u");
 					for(var i=1;i<u_el.length;i+=2){
 						var text = u_el[i].innerHTML.split(", ");
-						u_el[i].innerHTML = "(" + text[1];
+						if(text[1]){
+							u_el[i].innerHTML = "(" + text[1];
+						}
 					}
 				}
 				,100
