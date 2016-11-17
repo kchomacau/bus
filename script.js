@@ -20,6 +20,7 @@ window.location.reload();}
 else{
 	localStorage.setItem("udmacau",chitips);
 	localStorage.setItem("udmacau_e",engtips);
+	window.location.reload();
 }
 
 
