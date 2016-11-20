@@ -1,8 +1,5 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 
-chitips = "<div style='padding:20px;background:crimson;color:white'>2016年11月17日至20日期間為一年一度大賽車，巴士路線將大幅度修改，請留意站點通告。</div>";
-engtips = "<div style='padding:20px;background:crimson;color:white'>2016 Nov 17-20, Due to Macau Grand Prix, bus routes are changed. Pay attention to the notice posted at bus stops.</div>";
-	
 if(vers!="v82"){
 
 	var tmp_js = {
@@ -13,19 +10,12 @@ if(vers!="v82"){
 
 
 var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
-localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>"+chitips);
-localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>"+engtips);
+localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");
+localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>");
 window.location.reload();}
 
-else{
-	localStorage.setItem("udmacau",chitips);
-	localStorage.setItem("udmacau_e",engtips);
-	window.location.reload();
-}
-
-
-var mt32X = "，該線於2016年11月11-13、17-20及25-27日提供服務，每十至十五分鐘由旅遊塔開出。";
-var mt32X_e = " in <strong>19:00-23:00</strong> on the following days: <strong>2016 Nov 11-13, 17-20 and 25-27</strong>. Bus departs from Macau Tower every 10-15 mins appr.";
+var mt32X = "，該線於2016年11月25-27日提供服務，每十至十五分鐘由旅遊塔開出。";
+var mt32X_e = " in 2016 Nov 25-27 19:00-23:00. Bus departs from Macau Tower every 10-15 mins appr.";
 
 var arr = [
 	
