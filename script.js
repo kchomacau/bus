@@ -9,13 +9,11 @@ if(vers!="v82"){
 	};
 
 
-var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
-localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");
-localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>");
-window.location.reload();}
-
-var mt32X = "，該線於2016年11月25-27日提供服務，每十至十五分鐘由旅遊塔開出。";
-var mt32X_e = " in 2016 Nov 25-27 19:00-23:00. Bus departs from Macau Tower every 10-15 mins appr.";
+	var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
+	localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");
+	localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div></a>");
+	window.location.reload();
+}
 
 var arr = [
 	
@@ -50,20 +48,20 @@ var arr = [
 		c:"<strong>班次調整</strong><br>改為約每20分鐘開出一班。"
 	},
 	{
-		r:["T365"],
-		e:"Nov 12 2016 10:00-20:00<br>This stop is suspended. You may use \"Roundabout of Olympic Aquatic Centre\" stop.",
-		c:"2016年11月12日 10:00-20:00<br>本站停用，您可使用「奧林匹克游泳館圓形地」站上落。"
+		r:["M74"],
+		e:"From Dec 2<br>Rt 7, 7A, 8 <font color=crimson><del>to Jai Alai (via Praca Ferreira Amaral)</del></font> skips this stop. Meanwhile, this stop is renamed as \"Escola S. Luso-Chinesa de L. G. Gomes\". Rt 8 <font color=crimson>to Ilha Verde (via Kiang Wu Hospital)</font> stops here.</font>",
+		c:"2016年12月2日起<br>路線7、7A及8 <font color=crimson><del>往回力（經亞馬喇）</del></font> 不停靠本站；同日，本站更名為「高美士中葡中學」站，路線8 <font color=crimson>往青洲（經鏡湖醫院）</font> 新增停靠本站。"
 	},
 	{
-		r:["M177","M181","M179"],
-		e:"<strong>New route available</strong><br>You may take <strong>Rt 32X</strong> to Praca Ferreira Amaral" + mt32X_e,
-		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往亞馬喇前地" + mt32X
+		r:["r7x","r7Ax","r8x"],
+		e:"From Dec 2<br>\"Tung Hei Kok Bldg\" stop is skipped.",
+		c:"2016年12月2日起<br>本線不再停靠「東曦閣」站。"
 	},
 	{
-		r:["M172B","M187","M199"],
-		e:"<strong>New route available</strong><br>You may take <strong>Rt 32X</strong> to Macau Tower" + mt32X_e,
-		c:"<strong>新線提供服務</strong><br>您可選乘路線32X前往旅遊塔" + mt32X
+		r:["r8y"],
+		e:"From Dec 2<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
+		c:"2016年12月2日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
 	}
 	
-
-];for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
+];
+for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
