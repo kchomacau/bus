@@ -49,8 +49,8 @@ var arr = [
 	},
 	{
 		r:["M74"],
-		e:"From Dec 2<br>Rt 7, 7A, 8 <font color=crimson><del>to Jai Alai (via Praca Ferreira Amaral)</del></font> skips this stop. Meanwhile, this stop is renamed as \"Escola S. Luso-Chinesa de L. G. Gomes\". Rt 8 <font color=crimson>to Ilha Verde (via Kiang Wu Hospital)</font> stops here.</font>",
-		c:"2016年12月2日起<br>路線7、7A及8 <font color=crimson><del>往回力（經亞馬喇）</del></font> 不停靠本站；同日，本站更名為「高美士中葡中學」站，路線8 <font color=crimson>往青洲（經鏡湖醫院）</font> 新增停靠本站。"
+		e:"<strong>Important Notes</strong><br>Due to route adjustment, Rt 7, 7A and 8 using this stop is going to <font color=crimson>Hospital Kiang Wu</font> (which is the reverse trip of the info listed below). Should you go to Praca Ferreira Amaral or San Malo, go to \"Tap Seac Multisport Pavilion\" stop.",
+		c:"<strong>重要通知</strong><br>由於路線調整，停靠本站的 7、7A及8路線是前往<font color=crimson>鏡湖醫院</font>的（即與下方列出的路線方向剛好相反）。如要前往亞馬喇前地或新馬路，請步行至「塔石體育館」站乘搭。"
 	},
 	{
 		r:["r7x","r7Ax","r8x"],
@@ -59,8 +59,13 @@ var arr = [
 	},
 	{
 		r:["r8y"],
-		e:"From Dec 2<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
-		c:"2016年12月2日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
+		e:"From now on<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
+		c:"即日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
+	},
+	{
+		r:["r7y","r7Ay"],
+		e:"From Dec 7<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
+		c:"2016年12月7日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
 	}
 	
 ];
