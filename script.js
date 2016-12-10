@@ -1,6 +1,6 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 
-if(vers!="v82"){
+if(vers!="v82" && vers!="v83"){
 
 	var tmp_js = {
 		ver: "4.4.2",
