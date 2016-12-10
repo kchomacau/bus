@@ -1,13 +1,12 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 
-if(vers!="v82" && vers!="v83"){
+if(vers!="v83"){
 
 	var tmp_js = {
-		ver: "4.4.2",
-		chi: "路線更新",
-		eng: "Update Routes"
+		ver: "4.4.3",
+		chi: "路線及地圖更新",
+		eng: "Update Routes and Maps"
 	};
-
 
 	var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 	localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div></a>");
@@ -15,58 +14,30 @@ if(vers!="v82" && vers!="v83"){
 	window.location.reload();
 }
 
+			// for old version, important changing.
+			if(vers!="v83"){
+
+
 var arr = [
 	
 	{
-		r:["r5Xx"],
-		e:"<strong>Timetable changed</strong><br>Service hours 07:00-09:30, 17:00-19:30.Departs every (Mon to Fri) 5-10 / (Sat) 12-15 mins appr.",
-		c:"<strong>班次調整</strong><br>一至六 07:00-09:30 及 17:00-19:30，平日約每5-10分鐘 / 星期六約每12-15分鐘開出一班。"
-	},
-	{
 		r:["r39Xx"],
-		e:"<strong>Service changed</strong><br>Bus departs from Praca Ferreira Amaral every 10-20 mins appr. Edf Lago became a way stop of this route.",
-		c:"<strong>服務調整</strong><br>改為約每10-20分鐘一班，由亞馬喇前地開出；湖畔大廈改作中途站。"
-	},
-	{
-		r:["r56x"],
-		e:"<strong>Timetable changed</strong><br>Bus departs every 12-20 mins appr.",
-		c:"<strong>班次調整</strong><br>改為約每12-20分鐘開出一班。"
-	},
-	{
-		r:["rH1x"],
-		e:"<strong>Timetable changed</strong><br>Bus departs every 10-18 mins appr.",
-		c:"<strong>班次調整</strong><br>改為約每10-18分鐘開出一班。"
+		e:"Service changed<br>Bus departs from Praca Ferreira Amaral. Edf Lago became a way stop of this route.",
+		c:"服務調整<br>改為由亞馬喇前地開出；湖畔大廈改為中途站。"
 	},
 	{
 		r:["rMT5x"],
-		e:"<strong>Timetable changed<br><font color=crimson>No service on Sundays and public holidays.</font></strong>. Service hours (Mon to Sat) 07:00-21:00. Departs every 8-25 mins appr.",
-		c:"<strong>班次調整<br><font color=crimson>星期日及公眾假期停駛</font></strong>，星期一至六改為 07:00-21:00 約每8-25分鐘開出一班。"
-	},
-	{
-		r:["rN4x","rN4y"],
-		e:"<strong>Timetable changed</strong><br>Departs every 20 mins appr.",
-		c:"<strong>班次調整</strong><br>改為約每20分鐘開出一班。"
+		e:"Timetable changed<br><font color=crimson>No service on Sundays and public holidays.</font></strong>.",
+		c:"班次調整<br><font color=crimson>星期日及公眾假期停駛。</font></strong>"
 	},
 	{
 		r:["M74"],
-		e:"<strong>Important Notes</strong><br>Due to route adjustment, Rt 7, 7A and 8 using this stop is going to <font color=crimson>Hospital Kiang Wu</font> (which is the reverse trip of the info listed below). Should you go to Praca Ferreira Amaral or San Malo, go to \"Tap Seac Multisport Pavilion\" stop.",
-		c:"<strong>重要通知</strong><br>由於路線調整，停靠本站的 7、7A及8路線是前往<font color=crimson>鏡湖醫院</font>的（即與下方列出的路線方向剛好相反）。如要前往亞馬喇前地或新馬路，請步行至「塔石體育館」站乘搭。"
-	},
-	{
-		r:["r7x","r7Ax","r8x"],
-		e:"From Dec 2<br>\"Tung Hei Kok Bldg\" stop is skipped.",
-		c:"2016年12月2日起<br>本線不再停靠「東曦閣」站。"
-	},
-	{
-		r:["r8y"],
-		e:"From now on<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
-		c:"即日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
-	},
-	{
-		r:["r7y","r7Ay"],
-		e:"From Dec 7<br><strong>\"Escola S. Luso-Chinesa de L. G. Gomes\"</strong> (originally \"Tung Hei Kok Bldg\" stop) is added to this route after \"Rua do Campo\" stop.",
-		c:"2016年12月7日起<br>本線行經水坑尾後，將停靠<strong>「高美士中葡中學」</strong>（原「東曦閣」）站。"
+		e:"Important Notice<br>Due to route adjustment, Rt 7, 7A and 8 using this stop are going to <font color=crimson>Hospital Kiang Wu</font> (which is the reverse trip of the info listed below). For Rt 7A or 8 to Praca Ferreira Amaral, go to \"Tap Seac Multisport Pavilion\" stop. For Rt 7 to San Malo, go to \"Tap Seac Plaza\" stop.",
+		c:"重要通知<br>由於路線調整，停靠本站的 7、7A及8路線是前往<font color=crimson>鏡湖醫院</font>的（即與下方列出的路線方向剛好相反）。乘搭7A及8路線前往亞馬喇前地，請步行至「塔石體育館」站乘搭；乘搭7路線往新馬路，請步行至「塔石廣場」站乘搭。"
 	}
-	
+
 ];
 for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
+
+
+			}
