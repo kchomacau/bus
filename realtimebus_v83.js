@@ -20,7 +20,7 @@ function show(i){
 	trcuser_pro = function(cata,page,lang,ver){
 		mixpanel.track("Page View",{"Cata":cata,"Page":page,"Lang":lang,"Vers":vers,"User":userCode,"AndroidVersion":ver});
 	}
-	document.querySelector(".oroute").innerHTML += "<pre><small>Testing Log: Getting Bus Data r" + trc_rt +"</small></pre>";
+	document.querySelector(".oroute").innerHTML += "<pre><small><font color=#aaa>Testing Log: Getting Bus Data r" + trc_rt +"</font></small></pre>";
 	trcuser("realtimebus", trc_page+"@"+trc_stop_id, trc_lgtext);
 
 	replace_or_init(false);
