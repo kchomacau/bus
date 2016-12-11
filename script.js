@@ -34,7 +34,7 @@ var arr = [
 			if(vers!="v83"){
 arr.push(
 	{
-		r:["r39Xx"],
+		r:["r39x"],
 		e:"Service changed<br>Bus departs from "+begin_u+"Praca Ferreira Amaral"+end_u+". Edf Lago became a way stop of this route.",
 		c:"服務調整<br>改為由"+begin_u+"亞馬喇前地"+end_u+"開出；湖畔大廈改為中途站。"
 	},
