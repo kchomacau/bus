@@ -1,11 +1,14 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 
-if(vers!="v83"){
+var ver = parseInt(vers.substr(1));
+var cur_ver = 85;
+
+if(ver < cur_ver){
 
 	var tmp_js = {
-		ver: "4.4.3",
-		chi: "路線及地圖更新",
-		eng: "Update Routes and Maps"
+		ver: "4.4.5",
+		chi: "更新MT2路線",
+		eng: "Update Rt MT2"
 	};
 
 	var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
@@ -18,20 +21,19 @@ var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
 var end_u = '</strong>';
 
 var arr = [
-	{
-		r:["rN5x"],
-		e:"From now on, \""+begin_u+"Airport Cargo Terminal"+end_u+"\" stop is added after \"Rotunda do Aeroporto/Wai Long\".",
-		c:"即日起<br>本線在停靠「機場圓形地/偉龍」站後，新增停靠「"+begin_u+"機場貨運站"+end_u+"」。"
-	},
-	{
-		r:["T417"],
-		e:"From now on, "+begin_u+"Rt N5"+end_u+" uses this stop for "+begin_u+"Av. Vale das Borboletas"+end_u+" bound.",
-		c:"即日起<br>"+begin_u+"N5線往蝴蝶谷大馬路"+end_u+"停靠本站。"
-	}
 ];
 
 			// for old version, important changing.
-			if(vers!="v83"){
+			if(ver < 84){
+arr.push(
+	{
+		r:["rMT2x"],
+		e:"Service changed<br>This route will return at Hotel Taipa Square. For Airport, take Rt MT1.",
+		c:"服務調整<br>本線將於駿景酒店折返，前往機場請選乘MT1路線。"
+	}
+);
+			}
+			if(ver < 83){
 arr.push(
 	{
 		r:["r39x"],
