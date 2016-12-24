@@ -24,14 +24,6 @@ var arr = [
 
 ];
 
-	arr.push(
-		{
-			r:["r1y","r1Ax","r1Ay","r2x","r2y","r2Ax","r2Ay","r3y","r3Ay","r4x","r5y","r6Ax","r7x","r7y","r7Ax","r7Ay","r8x","r8y","r8Ax","r10y","r10Ax","r10Ay","r11x","r12x","r12y","r17x","r18y","r18Ax","r19x","r21Ax","r21Ay","r22x","r23x","r26x","r26y","r26Ax","r27x","r28Ax","r28Bx","r28Cy","r32x","r33x","r34y","r35x","r36x","r50x","r50y","rMT1x","rMT2x","rMT4x","rMT4y"],
-			e:"Service Extend on Christmas Eve<br>The last bus of this route will depart at 25H00 (i.e., 1 am Dec 25).",
-			c:"平安夜尾班服務<br>本線尾班車將延至25H00（凌晨一時）。"
-		}
-	);
-
 	// for old version, important changing.
 	if(ver < 84){
 		arr.push(
