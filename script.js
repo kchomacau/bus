@@ -21,7 +21,21 @@ var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
 var end_u = '</strong>';
 
 var arr = [
-
+	{
+		r:["r6Bx","r26x","r26y"],
+		e:"2016 Dec 31 20:00-Last Departure<br>This route skips Macau Tower. For Macau Tower, take another route.",
+		c:"2016年12月31日晚上八時至尾班車<br>本線不行經旅遊塔，請改乘其他路線。"
+	},
+	{
+		r:["M172B"],
+		e:"2016 Dec 31 21:30(Appr.)-01:00<br>You may take rt 32X for Macau Tower. (The first bus departs from Macau Tower at 21:00)",
+		c:"2016年12月31日晚上約九時半至凌晨一時<br>您可乘搭32X路線前往旅遊塔。（首班車將於夜晚九時在旅遊塔開出）"
+	},
+	{
+		r:["M177"],
+		e:"2016 Dec 31 21:00-01:00<br>You may take rt 32X for Praca Ferreira Amaral.",
+		c:"2016年12月31日晚上九時至凌晨一時<br>您可乘搭32X路線前往亞馬喇前地。"
+	}
 ];
 
 	// for old version, important changing.
