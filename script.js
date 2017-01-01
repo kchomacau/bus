@@ -1,5 +1,10 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
+var begin_style = '<div style="font-size: 17px;line-height:110%;background: #C90EBB;display:block;clear:both;color: #FFEAFD;padding: 12px;font-weight: bold;">';
+var end_style = "</div>";
+var chineseWish = begin_style + '澳門出行易謹祝您新年快樂！' + end_style;
+var englishWish = begin_style + 'Macau EasyGo wishes you a happy new year!' + end_style;
+
 var cur_ver = 85;
 
 	if(ver < cur_ver){
@@ -12,9 +17,14 @@ var cur_ver = 85;
 
 		var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
 		var end_link = '</a>';
-		localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>" + end_link);
-		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link);
+		localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>" + end_link + chineseWish);
+		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link + englishWish);
 		window.location.reload();
+	}
+	else{
+	    localStorage.setItem("udmacau",chineseWish);
+	    localStorage.setItem("udmacau_e",englishWish);
+	    window.location.reload();
 	}
 
 var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
