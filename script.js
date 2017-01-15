@@ -1,5 +1,12 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
+var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
+var end_u = '</strong>';
+
+var arr = [];
+
+for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
+
 var cur_ver = 85;
 
 	if(ver < cur_ver){
@@ -16,10 +23,3 @@ var cur_ver = 85;
 		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link);
 		window.location.reload();
 	}
-
-var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
-var end_u = '</strong>';
-
-var arr = [];
-
-for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
