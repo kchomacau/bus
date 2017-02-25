@@ -41,8 +41,8 @@ var arr = [
 	},
 	{
 		r:["rMT4x"],
-		e:"From now on,<br>\"Rua Norte do Patane/Bacia Norte do Patane\" is skipped. Use \"Rua da Doca Seca\" stop (<a href=\"javascript:full_e(\'22.206895,113.540333\',\'Rua da Doca Seca\')\" style=\"color:#0097ff\">Click here to view offline map of the stop</a>) instead.",
-		c:"即日起，<br>路線MT4不停靠北灣總站，可於「船澳街」(<a href=\"javascript:full(\'22.206895,113.540333\',\'船澳街\')\" style=\"color:#0097ff\">離線地圖看位置</a>)上車。",
+		e:"From now on,<br>\"Rua Norte do Patane/Bacia Norte do Patane\" is skipped. Use \"Rua da Doca Seca\" stop instead.",
+		c:"即日起，<br>路線MT4不停靠北灣總站，可於「船澳街」上車。",
 	},
 	{
 		r:["M95"],
