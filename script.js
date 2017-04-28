@@ -5,9 +5,24 @@ var end_u = '</strong>';
 
 var arr = [
 	{
-		r:["M155"],
-		e:'18-27 Apr 2017<br>Due to roadwork, for aboarding (except Rt 5), you need to go "Garden of Comendador Ho Yin" stop.',
-		c:"18-27/4/2017<br>工程影響，除5路線以外，其餘路線需於「何賢公園」乘搭。"
+		r:["r37x"],
+		e:'Route extension<br>From now on, Rt 37 departs at Chun Su Mei Bus Terminus (Near Rua do Cunha) every 30-35 minutes. Bus fee $2.8 wherever you aboard. For passengers at Rua de Lagos, go "Av. Sun Yat Sen/C.T.M." stop. For other passengers, no effect.',
+		c:"路線擴展<br>由即日起，路線37將延伸至松樹尾總站（近官也街），並改為每30至35分鐘一班車、及劃一收費$2.8。原於「拉哥斯街」站乘車的乘客，可於「氹仔電訊」站上車；其餘站點的乘客不受影響。"
+	},
+	{
+		r:["M1"],
+		e:'Passengers of Rt 27 (to Ilha Verde), go "Border Gate Square" stop.',
+		c:"乘搭路線27（往青洲）的乘客請前往位於地面的「關閘廣場」站。"
+	},
+	{
+		r:["M207"],
+		e:'Rt 27 skips this stop.',
+		c:"路線27不再停靠本站。"
+	},
+	{
+		r:["r27x"],
+		e:'For Ilha Verde bound, no stop at "Av. Norte do Hipodromo" and "Border Gate". Use "Border Gate Square" stop instead (no effect for Areia Preta bound).',
+		c:"往青洲方向不再停靠「馬場北大馬路」及「關閘總站」，請使用「關閘廣場」站（僅限往青洲方向）"
 	}
 ];
 
