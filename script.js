@@ -1,51 +1,34 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
-var begin_u = '<strong style="font-weight:normal;text-decoration:underline">';
-var end_u = '</strong>';
+var begin_u = '<div style="font-size: 15px;line-height:20px;background: #ccc;display:block;clear:both;color: #666;padding: 20px;font-weight: bold;">';
+var end_u = '</div>';
+
+chineseWish = begin_u + '站點名稱更正：本版本內的C659站與C660站的站點名稱錯誤地對調了，往黑沙方向的站名正確應為「路環居民大會堂(C660)」，其反方向之站名為「路環街市(C659)」。' + end_u;
+englishWish = begin_u + 'Correction: The name of bus stop "C659" and "C660" is swapped incorrectly. The one for Hac-Sa bound is "Coloane Residents\' Association (C660)", while the opposite one is "Municipal Market of Coloane (C659)"' + end_u;
 
 var arr = [
-	{
-		r:["r25x"],
-		e:'From 6 May 2017, this route terminates at Coloane, <strong style="color:crimson">no stop at Cheoc Van and Hac Sa Beach.</strong> Take Rt 26A instead.',
-		c:'五月六日起，本線以路環市區為總站，<strong style="color:crimson">不再前往竹灣及黑沙海灘。</strong>請改乘26A路線。'
-	},
-	{
-		r:["C669","C658","C675","C668","C678","C665","C663","C661"],
-		e:'From 6 May 2017, <strong style="color:crimson">Rt 25 skips this stop.</strong> Take Rt 26A instead.',
-		c:'五月六日起，<strong style="color:crimson">路線25不停靠本站。</strong>請改乘26A路線。'
-	},
-	{
-		r:["M172D","T403","T402","T309","T375","T379","T359","T357","C688","C691","C652","C655","C657"],
-		e:'From 6 May 2017, Rt 25 terminates at Coloane. For Cheoc Van and Hac Sa Beach, take Rt 26A instead.',
-		c:'五月六日起，路線25以路環市區為總站。前往竹灣及黑沙海灘，請改乘26A路線。'
-	},
-	{
-		r:["r37x"],
-		e:'Route extension<br>From now on, Rt 37 departs at Chun Su Mei Bus Terminus (Near Rua do Cunha) every 30-35 minutes. Bus fee $2.8 wherever you aboard. For passengers at Rua de Lagos, go "Av. Sun Yat Sen/C.T.M." stop. For other passengers, no effect.',
-		c:"路線擴展<br>由即日起，路線37將延伸至松樹尾總站（近官也街），並改為每30至35分鐘一班車、及劃一收費$2.8。原於「拉哥斯街」站乘車的乘客，可於「氹仔電訊」站上車；其餘站點的乘客不受影響。"
-	},
-	{
-		r:["M1"],
-		e:'Passengers of Rt 27 (to Ilha Verde), go "Border Gate Square" stop.',
-		c:"乘搭路線27（往青洲）的乘客請前往位於地面的「關閘廣場」站。"
-	},
-	{
-		r:["M207"],
-		e:'Rt 27 skips this stop.',
-		c:"路線27不再停靠本站。"
-	},
-	{
-		r:["r27x"],
-		e:'For Ilha Verde bound, no stop at "Av. Norte do Hipodromo" and "Border Gate". Use "Border Gate Square" stop instead (no effect for Areia Preta bound).',
-		c:"往青洲方向不再停靠「馬場北大馬路」及「關閘總站」，請使用「關閘廣場」站（僅限往青洲方向）"
-	}
+		{
+			r:["r25x"],
+			e:'From 6 May 2017, this route terminates at Coloane, <strong style="color:crimson">no stop at Cheoc Van and Hac Sa Beach.</strong> Take Rt 26A instead.',
+			c:'五月六日起，本線以路環市區為總站，<strong style="color:crimson">不再前往竹灣及黑沙海灘。</strong>請改乘26A路線。'
+		},
+		{
+			r:["C669","C658","C675","C668","C678","C665","C663","C661"],
+			e:'From 6 May 2017, <strong style="color:crimson">Rt 25 skips this stop.</strong> Take Rt 26A instead.',
+			c:'五月六日起，<strong style="color:crimson">路線25不停靠本站。</strong>請改乘26A路線。'
+		},
+		{
+			r:["M172D","T403","T402","T309","T375","T379","T359","T357","C688","C691","C652","C655","C657"],
+			e:'From 6 May 2017, Rt 25 terminates at Coloane. For Cheoc Van and Hac Sa Beach, take Rt 26A instead.',
+			c:'五月六日起，路線25以路環市區為總站。前往竹灣及黑沙海灘，請改乘26A路線。'
+		}
 ];
 
-var cur_ver = 88;
+var cur_ver = 89;
 var tmp_js = {
-	ver: "4.4.8",
-	chi: "更新路線",
-	eng: "Update Routes"
+	ver: "4.4.9",
+	chi: "性能優化",
+	eng: "Performance Enhancement"
 };
 
 if(ver < cur_ver){
@@ -60,6 +43,26 @@ if(ver < cur_ver){
 			r:["r7x"],
 			e:"<strong>Diverted</strong><br>Skips San Malo <-> Barra. Take Rt 2 instead.",
 			c:"<strong>改道</strong><br>本線不再行經新馬路至媽閣，請改乘2路線。"
+		},
+		{
+			r:["r37x"],
+			e:'Route extension<br>From now on, Rt 37 departs at Chun Su Mei Bus Terminus (Near Rua do Cunha) every 30-35 minutes. Bus fee $2.8 wherever you aboard. For passengers at Rua de Lagos, go "Av. Sun Yat Sen/C.T.M." stop. For other passengers, no effect.',
+			c:"路線擴展<br>由即日起，路線37將延伸至松樹尾總站（近官也街），並改為每30至35分鐘一班車、及劃一收費$2.8。原於「拉哥斯街」站乘車的乘客，可於「氹仔電訊」站上車；其餘站點的乘客不受影響。"
+		},
+		{
+			r:["M1"],
+			e:'Passengers of Rt 27 (to Ilha Verde), go "Border Gate Square" stop.',
+			c:"乘搭路線27（往青洲）的乘客請前往位於地面的「關閘廣場」站。"
+		},
+		{
+			r:["M207"],
+			e:'Rt 27 skips this stop.',
+			c:"路線27不再停靠本站。"
+		},
+		{
+			r:["r27x"],
+			e:'For Ilha Verde bound, no stop at "Av. Norte do Hipodromo" and "Border Gate". Use "Border Gate Square" stop instead (no effect for Areia Preta bound).',
+			c:"往青洲方向不再停靠「馬場北大馬路」及「關閘總站」，請使用「關閘廣場」站（僅限往青洲方向）"
 		}
 	);
 }
@@ -73,4 +76,10 @@ for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.se
 		localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>" + end_link);
 		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link);
 		window.location.reload();
+	}
+	else{
+		
+	    localStorage.setItem("udmacau",chineseWish);
+	    localStorage.setItem("udmacau_e",englishWish);
+	    window.location.reload();
 	}
