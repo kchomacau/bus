@@ -5,6 +5,21 @@ var end_u = '</strong>';
 
 var arr = [
 	{
+		r:["r25x"],
+		e:'From 6 May 2017, this route terminates at Coloane, <strong style="color:crimson">no stop at Cheoc Van and Hac Sa Beach.</strong> Take Rt 26A instead.',
+		c:'五月六日起，本線以路環市區為總站，<strong style="color:crimson">不再前往竹灣及黑沙海灘。</strong>請改乘26A路線。'
+	},
+	{
+		r:["C669","C658","C675","C668","C678","C665","C663","C661"],
+		e:'From 6 May 2017, <strong style="color:crimson">Rt 25 skips this stop.</strong> Take Rt 26A instead.',
+		c:'五月六日起，<strong style="color:crimson">路線25不停靠本站。</strong>請改乘26A路線。'
+	},
+	{
+		r:["M172D","T403","T402","T309","T375","T379","T359","T357","C688","C691","C652","C655","C657"],
+		e:'From 6 May 2017, Rt 25 terminates at Coloane. For Cheoc Van and Hac Sa Beach, take Rt 26A instead.',
+		c:'五月六日起，路線25以路環市區為總站。前往竹灣及黑沙海灘，請改乘26A路線。'
+	},
+	{
 		r:["r37x"],
 		e:'Route extension<br>From now on, Rt 37 departs at Chun Su Mei Bus Terminus (Near Rua do Cunha) every 30-35 minutes. Bus fee $2.8 wherever you aboard. For passengers at Rua de Lagos, go "Av. Sun Yat Sen/C.T.M." stop. For other passengers, no effect.',
 		c:"路線擴展<br>由即日起，路線37將延伸至松樹尾總站（近官也街），並改為每30至35分鐘一班車、及劃一收費$2.8。原於「拉哥斯街」站乘車的乘客，可於「氹仔電訊」站上車；其餘站點的乘客不受影響。"
