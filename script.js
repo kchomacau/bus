@@ -25,17 +25,17 @@ var arr = [
 },
 {
 	r:["r51x"],
-	e:'8-10 May 2017, "Light Rail Depot-1" and "Light Rail Depot-2" will be skipped. Use "Av. Dr. Henry Fok/Wynn Palace" instead.',
-	c:'五月八日至十日，本線不停靠「輕軌車廠-1」及「輕軌車廠-2」站，請使用「霍英東馬路/永利皇宮」站上落。'
+	e:'8-10 May 2017, "Light Rail Depot-1" and "Light Rail Depot-2" will be skipped. Use "Av. Dr. Henry Fok/Wynn Palace" (for Seac Pai Van bound) or the temp stop located opposite to that stop (for Border Gate (Portas do Cerco) bound) instead. Please be aware of the direction shown at the front of the bus.',
+	c:'五月八日至十日，本線不停靠「輕軌車廠-1」及「輕軌車廠-2」站，請使用（往石排灣）「霍英東馬路/永利皇宮」或（往關閘）設於該站對面的臨時站，上車時請留意車頭顯示的方向。'
 },
 {
 	r:["r59x"],
-	e:'8-10 May 2017, "Light Rail Depot-1" and "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Rotunda Flor de Lotus-1" or "Av. Dr. Henry Fok/Wynn Palace" instead.',
+	e:'8-10 May 2017, "Light Rail Depot-1" and "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Rotunda Flor de Lotus-1" or "Av. Dr. Henry Fok/Wynn Palace" instead. Please be aware of the direction shown at the front of the bus.',
 	c:'五月八日至十日，本線不停靠「輕軌車廠-1」及「蓮花路/蓮花圓形地-1」站，請使用「蓮花圓形地-1」或「霍英東馬路/永利皇宮」站上落，上車時請留意車頭顯示的方向。'
 },
 {
 	r:["r59y"],
-	e:'8-10 May 2017, "Light Rail Depot-2" and "Est. F. de Lotus/Rotunda F. de Lotus-2" will be skipped. Use "Est. do Istmo/Studio City", or the temp stop opposite to "Av. Dr. Henry Fok/Wynn Palace" instead.',
+	e:'8-10 May 2017, "Light Rail Depot-2" and "Est. F. de Lotus/Rotunda F. de Lotus-2" will be skipped. Use "Est. do Istmo/Studio City", or the temp stop opposite to "Av. Dr. Henry Fok/Wynn Palace" instead. Please be aware of the direction shown at the front of the bus.',
 	c:'五月八日至十日，本線不停靠「輕軌車廠-2」及「蓮花路/蓮花圓形地-2」站，請使用「連貫公路/新濠影匯」站，或設於「霍英東馬路/永利皇宮」對面之臨時站上落，上車時請留意車頭顯示的方向。'
 },
 {
