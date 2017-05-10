@@ -7,47 +7,6 @@ chineseText = begin_u + '站點名稱更正：本版本內的C659站與C660站�
 englishText = begin_u + 'Correction: The name of bus stop "C659" and "C660" is swapped incorrectly. The one for Hac-Sa bound is "Coloane Residents\' Association (C660)", while the opposite one is "Municipal Market of Coloane (C659)"' + end_u;
 
 var arr = [
-	
-{
-	r:["r25Xx"],
-	e:'8-10 May 2017, "Nova Cidade de Cotai-1", "Nova Cidade de Cotai-2", "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Est. do Istmo/Sands Cotai Central" or "Rotunda Flor de Lotus-1" instead.',
-	c:'五月八日至十日，本線不停靠「路氹新城-1」、「路氹新城-2」及「蓮花路/蓮花圓形地-1」站，請使用「連貫公路/金沙城中心」或「蓮花圓形地-1」站。'
-},
-{
-	r:["r50y","rMT4x","rN5y"],
-	e:'8-10 May 2017, "Est. F. de Lotus/Rotunda F. de Lotus-2", "Nave Desportiva/R. do Tiro" will be skipped. Use "Est. do Istmo/Studio City" instead.',
-	c:'五月八日至十日，本線不停靠「蓮花路/蓮花圓形地-2」及「體育館/射擊路」站，請使用「連貫公路/新濠影匯」站。'
-},
-{
-	r:["r50x"],
-	e:'8-10 May 2017, the 4 stops between (included) "Av. da Nave Desportiva/Wynn Palace" and "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Est. do Istmo/Sands Cotai Central" or "Rotunda Flor de Lotus-1", or the temp stop located at northwest (left-top corner in map) of Wynn Palace instead.',
-	c:'五月八日至十日，本線不停靠「體育館馬路/永利皇宮」至「蓮花路/蓮花圓形地-1」站之間的四個站，請使用「連貫公路/金沙城中心」或「蓮花圓形地-1」站，或設於永利皇宮西北（地圖的左上角）的臨時站上落。'
-},
-{
-	r:["r51x"],
-	e:'8-10 May 2017, "Light Rail Depot-1" and "Light Rail Depot-2" will be skipped. Use "Av. Dr. Henry Fok/Wynn Palace" (for Seac Pai Van bound) or the temp stop located opposite to that stop (for Border Gate (Portas do Cerco) bound) instead. Please be aware of the direction shown at the front of the bus.',
-	c:'五月八日至十日，本線不停靠「輕軌車廠-1」及「輕軌車廠-2」站，請使用（往石排灣）「霍英東馬路/永利皇宮」或（往關閘）設於該站對面的臨時站，上車時請留意車頭顯示的方向。'
-},
-{
-	r:["r59x"],
-	e:'8-10 May 2017, "Light Rail Depot-1" and "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Rotunda Flor de Lotus-1" or "Av. Dr. Henry Fok/Wynn Palace" instead. Please be aware of the direction shown at the front of the bus.',
-	c:'五月八日至十日，本線不停靠「輕軌車廠-1」及「蓮花路/蓮花圓形地-1」站，請使用「蓮花圓形地-1」或「霍英東馬路/永利皇宮」站上落，上車時請留意車頭顯示的方向。'
-},
-{
-	r:["r59y"],
-	e:'8-10 May 2017, "Light Rail Depot-2" and "Est. F. de Lotus/Rotunda F. de Lotus-2" will be skipped. Use "Est. do Istmo/Studio City", or the temp stop opposite to "Av. Dr. Henry Fok/Wynn Palace" instead. Please be aware of the direction shown at the front of the bus.',
-	c:'五月八日至十日，本線不停靠「輕軌車廠-2」及「蓮花路/蓮花圓形地-2」站，請使用「連貫公路/新濠影匯」站，或設於「霍英東馬路/永利皇宮」對面之臨時站上落，上車時請留意車頭顯示的方向。'
-},
-{
-	r:["rMT4y","rN5x"],
-	e:'8-10 May 2017, the 4 stops between (included) "Av. da Nave Desportiva/Wynn Palace" and "Est. F. de Lotus/Rotunda F. de Lotus-1" will be skipped. Use "Est. do Istmo/Sands Cotai Central" or "Rotunda Flor de Lotus-1" instead.',
-	c:'五月八日至十日，本線不停靠「體育館馬路/永利皇宮」至「蓮花路/蓮花圓形地-1」站之間的四個站，請使用「連貫公路/金沙城中心」或「蓮花圓形地-1」站上落。'
-},
-{
-	r:["r9x","r16x"],
-	e:'8-10 May 2017, "Rua da Penha" and "Riviera Hotel" will be skipped. Use "Av. Republica" or "Lilau Square" stop instead.',
-	c:'五月八日至十日，本線不停靠「西坑街」及「濠璟酒店」站，請使用「民國馬路」或「亞婆井前地」站上落。'
-},
 
 		{
 			r:["r25x"],
