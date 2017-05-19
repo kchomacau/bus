@@ -1,13 +1,25 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
-var begin_u = '<div style="font-size: 15px;line-height:20px;background: #ccc;display:block;clear:both;color: #666;padding: 20px;font-weight: bold;">';
-var end_u = '</div>';
-
-chineseText = begin_u + '站點名稱更正：本版本內的C659站與C660站的站點名稱錯誤地對調了，往黑沙方向的站名正確應為「路環居民大會堂(C660)」，其反方向之站名為「路環街市(C659)」。' + end_u;
-englishText = begin_u + 'Correction: The name of bus stop "C659" and "C660" is swapped incorrectly. The one for Hac-Sa bound is "Coloane Residents\' Association (C660)", while the opposite one is "Municipal Market of Coloane (C659)"' + end_u;
-
 var arr = [
 
+];
+
+var cur_ver = 90;
+var tmp_js = {
+	ver: "4.4.10",
+	chi: "路線更新",
+	eng: "Route Update"
+};
+
+if(ver < cur_ver){
+	
+	arr.push(
+		
+		{
+			r:["rMT5x"],
+			e:"<strong>Service Hour Changed</strong><br>From now on, service on Mon to Fri only.",
+			c:"<strong>服務時間調整</strong><br>即日起，本線只於星期一至五運作。"
+		},
 		{
 			r:["r25x"],
 			e:'From 6 May 2017, this route terminates at Coloane, <strong style="color:crimson">no stop at Cheoc Van and Hac Sa Beach.</strong> Take Rt 26A instead.',
@@ -22,19 +34,7 @@ var arr = [
 			r:["M172D","T403","T402","T309","T375","T379","T359","T357","C688","C691","C652","C655","C657"],
 			e:'From 6 May 2017, Rt 25 terminates at Coloane. For Cheoc Van and Hac Sa Beach, take Rt 26A instead.',
 			c:'五月六日起，路線25以路環市區為總站。前往竹灣及黑沙海灘，請改乘26A路線。'
-		}
-];
-
-var cur_ver = 89;
-var tmp_js = {
-	ver: "4.4.9",
-	chi: "性能優化",
-	eng: "Performance Enhancement"
-};
-
-if(ver < cur_ver){
-	
-	arr.push(
+		},
 		{
 			r:["r5x"],
 			e:"<strong>Diverted</strong><br>Skips Av. Coronel Mesquita. Go Horta e Costa for this route.",
@@ -77,10 +77,4 @@ for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.se
 		localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>" + end_link);
 		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link);
 		window.location.reload();
-	}
-	else{
-		
-	    localStorage.setItem("udmacau",chineseText);
-	    localStorage.setItem("udmacau_e",englishText);
-	    window.location.reload();
 	}
