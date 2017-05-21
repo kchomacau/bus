@@ -32,22 +32,7 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-var func_str = showBusCurrentPos.toString();
-var showBusCurPos = eval(func_str);
-//console.log(showBusCurrentPos.toString());
-
-var showBusCurrentPos = function(ref, ref2, resultJSON){
-
-	resultJSON = resultJSON.replace(/"{2,}/g,'"').replace(/:",/g,':"",');
-	resultJSON = JSON.parse(resultJSON);
-
-	if(resultJSON.error){
-		showError(ref);
-		return false;
-	}
-	for(var i=0;i<resultJSON.data.routeInfo.length;i++){
-		resultJSON.data.routeInfo[i].tcName = resultJSON.data.routeInfo[i].staCode;
-	}
-	
-	showBusCurPos(ref, ref2, JSON.stringify(resultJSON));
-}
+eval(showBusCurrentPos.toString
+		.replace("tcName", "staCode")
+		.replace("resultJSON = resultJSON[0]", "resultJSON = resultJSON.data")
+)
