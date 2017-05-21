@@ -32,9 +32,9 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-var showBusCurPos = showBusCurrentPos;
+showBusCurPos = eval(showBusCurrentPos.toString());
 
-function showBusCurrentPos(ref, ref2, resultJSON){
+var showBusCurrentPos = function(ref, ref2, resultJSON){
 
 	resultJSON = resultJSON.replace(/"{2,}/g,'"').replace(/:",/g,':"",');
 	resultJSON = JSON.parse(resultJSON);
@@ -43,9 +43,8 @@ function showBusCurrentPos(ref, ref2, resultJSON){
 		showError(ref);
 		return false;
 	}
-	resultJSON = resultJSON.data;
-	for(var i=0;i<resultJSON.routeInfo.length;i++){
-		resultJSON.routeInfo[i].tcName = resultJSON.routeInfo[i].staCode;
+	for(var i=0;i<resultJSON.data.routeInfo.length;i++){
+		resultJSON.data.routeInfo[i].tcName = resultJSON.data.routeInfo[i].staCode;
 	}
 	
 	showBusCurPos(ref, ref2, JSON.stringify(resultJSON));
