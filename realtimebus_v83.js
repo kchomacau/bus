@@ -43,7 +43,7 @@ function showBusCurrentPos(ref, ref2, resultJSON){
 		showError(ref);
 		return false;
 	}
-	resultJSON = resultJSON[0];
+	resultJSON = resultJSON.data;
 	for(var i=0;i<resultJSON.routeInfo.length;i++){
 		resultJSON.routeInfo[i].tcName = resultJSON.routeInfo[i].staCode;
 	}
