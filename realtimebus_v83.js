@@ -32,8 +32,9 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-showBusCurPos = eval(showBusCurrentPos.toString());
-console.log(showBusCurrentPos.toString());
+var func_str = showBusCurrentPos.toString();
+var showBusCurPos = eval(func_str);
+//console.log(showBusCurrentPos.toString());
 
 var showBusCurrentPos = function(ref, ref2, resultJSON){
 
