@@ -32,7 +32,7 @@ function show(i){
 	interval = window.setInterval(fetch_busData, 10000);
 }
 
-eval(showBusCurrentPos.toString
+eval(showBusCurrentPos.toString()
 		.replace("tcName", "staCode")
 		.replace("resultJSON = resultJSON[0]", "resultJSON = resultJSON.data")
 )
