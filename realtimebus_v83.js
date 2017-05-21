@@ -33,6 +33,7 @@ function show(i){
 }
 
 showBusCurPos = eval(showBusCurrentPos.toString());
+console.log(showBusCurrentPos.toString());
 
 var showBusCurrentPos = function(ref, ref2, resultJSON){
 
