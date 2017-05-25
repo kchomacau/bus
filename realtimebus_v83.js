@@ -23,11 +23,11 @@ function show(i){
 		mixpanel.track("Page View",{"Cata":cata,"Page":page,"Lang":lang,"Vers":vers,"User":userCode,"AndroidVersion":ver});
 	}
 	
-	if(document.getElementById("additional-tips")){
-	}
-	else{
-		document.querySelector(".oroute").innerHTML += "<pre id='additional-tips'>===功能測試中===</pre>";
-	}
+	// if(document.getElementById("additional-tips")){
+	// }
+	// else{
+	// 	document.querySelector(".oroute").innerHTML += "<pre id='additional-tips'></pre>";
+	// }
 	trcuser("realtimebus", trc_page+"@"+trc_stop_id, trc_lgtext);
 
 	// end.
