@@ -1,6 +1,26 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
 var arr = [
+	{
+		r:["T431"],
+		e:"From now on, <strong>Rt 73 skips this stop</strong><br>For Areia Preta, take Rt 52 or 71 to Praca Ferreira Amaral then transfer to Rt 73.",
+		c:"即日起，<strong>路線73不停靠本站</strong><br>前往黑沙環的乘客請改乘52或71路線至亞馬喇後轉乘73。"
+	},
+	{
+		r:["T430"],
+		e:'From now on, <strong>Rt 73 skips this stop</strong><br>For UM, go "Ocean Plaza" stop and take Rt 71.',
+		c:'即日起，<strong>路線73不停靠本站</strong><br>前往澳大的乘客請前往「海洋廣場」站乘搭71路線。'
+	},
+	{
+		r:["r73x"],
+		e:'From now on, "Sai Van Bridge/Av. do Oceano" stop (for Areia Preta bound) and "Ocean Gardens/Rose Court" stop (for UM bound) will be skipped. Take Rt 52 or 71 instead.',
+		c:'即日起，本線不再停靠「西灣大橋/海洋大馬路」站（往黑沙環）及「海洋花園/玫瑰苑」（往澳大），請改乘52或71路線。'
+	},
+	{
+		r:["T345"],
+		e:'<strong>Bus stop relocation</strong><br>This stop is relocated to the ground floor of the new Taipa Ferry Terminal.',
+		c:'<strong>站點搬遷</strong><br>本站已搬遷至新氹仔客運碼頭地面層。'
+	}
 
 ];
 
@@ -34,36 +54,6 @@ if(ver < cur_ver){
 			r:["M172D","T403","T402","T309","T375","T379","T359","T357","C688","C691","C652","C655","C657"],
 			e:'From 6 May 2017, Rt 25 terminates at Coloane. For Cheoc Van and Hac Sa Beach, take Rt 26A instead.',
 			c:'五月六日起，路線25以路環市區為總站。前往竹灣及黑沙海灘，請改乘26A路線。'
-		},
-		{
-			r:["r5x"],
-			e:"<strong>Diverted</strong><br>Skips Av. Coronel Mesquita. Go Horta e Costa for this route.",
-			c:"<strong>改道</strong><br>本線不再行經美副將，請前往高士德乘搭。"
-		},
-		{
-			r:["r7x"],
-			e:"<strong>Diverted</strong><br>Skips San Malo <-> Barra. Take Rt 2 instead.",
-			c:"<strong>改道</strong><br>本線不再行經新馬路至媽閣，請改乘2路線。"
-		},
-		{
-			r:["r37x"],
-			e:'Route extension<br>From now on, Rt 37 departs at Chun Su Mei Bus Terminus (Near Rua do Cunha) every 30-35 minutes. Bus fee $2.8 wherever you aboard. For passengers at Rua de Lagos, go "Av. Sun Yat Sen/C.T.M." stop. For other passengers, no effect.',
-			c:"路線擴展<br>由即日起，路線37將延伸至松樹尾總站（近官也街），並改為每30至35分鐘一班車、及劃一收費$2.8。原於「拉哥斯街」站乘車的乘客，可於「氹仔電訊」站上車；其餘站點的乘客不受影響。"
-		},
-		{
-			r:["M1"],
-			e:'Passengers of Rt 27 (to Ilha Verde), go "Border Gate Square" stop.',
-			c:"乘搭路線27（往青洲）的乘客請前往位於地面的「關閘廣場」站。"
-		},
-		{
-			r:["M207"],
-			e:'Rt 27 skips this stop.',
-			c:"路線27不再停靠本站。"
-		},
-		{
-			r:["r27x"],
-			e:'For Ilha Verde bound, no stop at "Av. Norte do Hipodromo" and "Border Gate". Use "Border Gate Square" stop instead (no effect for Areia Preta bound).',
-			c:"往青洲方向不再停靠「馬場北大馬路」及「關閘總站」，請使用「關閘廣場」站（僅限往青洲方向）"
 		}
 	);
 }
