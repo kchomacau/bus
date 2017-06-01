@@ -1,6 +1,19 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
 var arr = [
+];
+
+var cur_ver = 91;
+var tmp_js = {
+	ver: "4.4.11",
+	chi: "路線更新",
+	eng: "Route Update"
+};
+
+if(ver < cur_ver){
+	
+	arr.push(
+		
 	{
 		r:["T431"],
 		e:"From now on, <strong>Rt 73 skips this stop</strong><br>For Areia Preta, take Rt 52 or 71 to Praca Ferreira Amaral then transfer to Rt 73.",
@@ -20,21 +33,7 @@ var arr = [
 		r:["T345"],
 		e:'<strong>Bus stop relocation</strong><br>This stop is relocated to the ground floor of the new Taipa Ferry Terminal.',
 		c:'<strong>站點搬遷</strong><br>本站已搬遷至新氹仔客運碼頭地面層。'
-	}
-
-];
-
-var cur_ver = 90;
-var tmp_js = {
-	ver: "4.4.10",
-	chi: "路線更新",
-	eng: "Route Update"
-};
-
-if(ver < cur_ver){
-	
-	arr.push(
-		
+	},
 		{
 			r:["rMT5x"],
 			e:"<strong>Service Hour Changed</strong><br>From now on, service on Mon to Fri only.",
