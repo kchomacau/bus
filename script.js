@@ -1,14 +1,38 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");var ver = parseInt(vers.substr(1));
 
-if(ver < 95){
 
-var begin_style = '<div style="font-size: 17px;line-height:110%;background: limegreen;display:block;clear:both;color: #222;padding: 12px;font-weight: bold;">';
-var end_style = "</div>";
-var chineseWish = begin_style + '最新通知(11/8 10:20 am)<br>最新修復版本(V4.4.12C)仍在審核中，請不必急於更新。' + end_style;
-var englishWish = begin_style + 'Latest News (11 Aug 10:20 am)<br>The latest bug fixing version (V4.4.12C) is under validation. You don\'t need to update now.' + end_style;
+var arr = [
+];
 
-		localStorage.setItem("udmacau",chineseWish);
-		localStorage.setItem("udmacau_e",englishWish);
-		window.location.reload();
-		
+var cur_ver = 95;
+var tmp_js = {
+	ver: "4.4.12C",
+	chi: "修復V4.4.12B的錯誤",
+	eng: "Bug fixing for V4.4.12B"
+};
+
+if(ver < 94){
+	
+	arr.push(
+{
+r:["r11x","r22x","r25Xx","r26y","r26Ax","r30x","r33x","r34x","r35x","r37x","rMT1x","rMT3x"],
+e:"Temp Diversion until Sep 2017:<br>Skip Taipa Village (Rua do Cunha). Install latest version for latest detail.",
+c:"臨時改道至2017年9月<br>不進入氹仔舊城區。請安裝最新版本以檢視最新停站資訊。"
 }
+	);
+	
+}
+
+if(ver < cur_ver){
+}
+
+for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}
+
+	if(ver < cur_ver){
+
+		var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';
+		var end_link = '</a>';
+		localStorage.setItem("udmacau",link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>" + end_link);
+		localStorage.setItem("udmacau_e",link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>" + end_link);
+		window.location.reload();
+	}
