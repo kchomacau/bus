@@ -3,14 +3,22 @@ passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e"
 var arr = [
 ];
 
-var cur_ver = 92;
+var cur_ver = 94;
 var tmp_js = {
-	ver: "4.4.12",
-	chi: "路線更新",
-	eng: "Route Update"
+	ver: "4.4.12B",
+	chi: "修復GPS地圖顯示",
+	eng: "Fix Bug: Map w/ GPS"
 };
 
 if(ver < cur_ver){
+	
+	arr.push(
+{
+r:["r11x","r22x","r25Xx","r26y","r26Ax","r30x","r33x","r34x","r35x","r37x","rMT1x","rMT3x"],
+e:"Temp Diversion until Sep 2017:<br>Skip Taipa Village (Rua do Cunha). Install latest version for latest detail.",
+c:"臨時改道至2017年9月<br>不進入氹仔舊城區。請安裝最新版本以檢視最新停站資訊。"
+}
+	);
 	
 }
 
