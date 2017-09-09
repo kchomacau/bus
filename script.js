@@ -4,11 +4,11 @@ passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e"
 var arr = [
 ];
 
-var cur_ver = 95;
+var cur_ver = 96;
 var tmp_js = {
-	ver: "4.4.12C",
-	chi: "修復V4.4.12B的錯誤",
-	eng: "Bug fixing for V4.4.12B"
+	ver: "4.4.13",
+	chi: "更新關閘區路線",
+	eng: "Update routes around Border Gate"
 };
 
 if(ver < 94){
