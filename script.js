@@ -6,7 +6,7 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 }
 
 var chi_st = html('2017年11月16日至19日賽車封路期間，各大路線將有較大改動，請留意巴士站及車廂通告。','crimson') + html('如果您在外港碼頭不知道要搭甚麼車，先乘12X路線到亞馬喇前地，那裡是澳門最多巴士線選擇的轉乘站。','#34a853');
-var eng_st = html('During car race (2017 Nov 16 - 19), bus routes will be diverted. Pls pay attention to notices posted inside the bus.','crimson') + html("If you don\'t know what bus to take, take Rt. 12X to Praca Ferreira Amaral first. There are much more bus routes to choose.",'#34a853');
+var eng_st = html('During car race (2017 Nov 16 - 19), bus routes will be diverted. Pls pay attention to notices posted inside the bus.','crimson') + html("If you are at Macau Ferry Terminal and don\'t know what bus to take, take Rt. 12X to Praca Ferreira Amaral first. There are much more bus routes to choose.",'#34a853');
 
 var arr = [
 ];
