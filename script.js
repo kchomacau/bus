@@ -1,12 +1,11 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 var ver = parseInt(vers.substr(1));
+var chi_st = "";
+var eng_st = "";
 
 function html(content, color){
 return '<div style="font-size:15px;line-height:20px;background:' + color + ';display:block;clear:both;color:#fff;padding:15px;font-weight:bold;">' + content + '</div>';
 }
-
-var chi_st = html('2017年11月16日至19日賽車封路期間，各大路線將有較大改動，請留意巴士站及車廂通告。','crimson') + html('如果您在外港碼頭不知道要搭甚麼車，先乘12X路線到亞馬喇前地，那裡是澳門最多巴士線選擇的轉乘站。','#34a853');
-var eng_st = html('During car race (2017 Nov 16 - 19), bus routes will be diverted. Pls pay attention to notices posted inside the bus.','crimson') + html("If you are at Macau Ferry Terminal and don\'t know what bus to take, take Rt. 12X to Praca Ferreira Amaral first. There are much more bus routes to choose.",'#34a853');
 
 var arr = [
 ];
@@ -17,6 +16,39 @@ var tmp_js = {
 	chi: "更新關閘區路線",
 	eng: "Update routes around Border Gate"
 };
+
+arr.push(
+{
+r:["r26y"],
+e:"From now on,<br>This route skips \"Airport Office\" and \"Macau Int'l Airport\" for Bacia Norte bound.",
+c:"即日起<br>本線往北灣方向不停靠「機場倉庫」及「澳門機場」站。"
+},
+{
+r:["T344","T356"],
+e:"From now on,<br>Rt 26 skips this stop for Bacia Norte bound. Take Rt MT4 instead.",
+c:"即日起<br>路線26往北灣方向不停靠本站，可改乘MT4路線。"
+},
+{
+r:["r51Ax","r51Ay"],
+e:"From now on,<br>You can aboard/alight at \"Taipa Ferry Terminal\" for both bound.",
+c:"即日起<br>本線來回程均停靠北安碼頭。"
+},
+{
+r:["r18x"],
+e:"From now on,<br>Rt 18 departs from RUA DA SERENIDADE (near \"Rua 1 Iao Hon\" busstop).<br>&nbsp;<br>You may take Rt 18B for destinations except S. Lourenco at midway stops of Rt 18. Rt 18B follows the exact same stops until Macau Tower, then go to Barra Terminus directly.",
+c:"即日起<br>路線18改由永定街開出（近「祐漢第一街」巴士站）。在本線之沿途站點，您可選乘18B路線（與路線18停站相同，唯18B停靠旅遊塔後將直接前往媽閣總站，不往風順堂區）。"
+},
+{
+r:["r18y"],
+e:"From now on,<br>Rt 18 terminates at RUA DA SERENIDADE (near \"Rua 1 Iao Hon\" busstop).<br>&nbsp;<br>You may take Rt 18B for destinations except San Malo and Rua Xavier Pereira at midway stops of Rt 18.",
+c:"即日起<br>路線18改以永定街為總站（近「祐漢第一街」巴士站）。在本線之沿途站點，您可選乘18B路線（不包括前往新馬路及俾利喇街的乘客）。"
+},
+{
+r:["r10Bx"],
+e:"From now on,<br>Rt 10B departs and terminates at AVENIDA DO HIPODROMO (near traffic light closed to McDonald's at Border Gate).",
+c:"即日起<br>路線10B以馬場大馬路為總站（近關閘麥當勞紅綠燈）。"
+}
+);
 
 if(ver < cur_ver){
 }
