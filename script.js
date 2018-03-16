@@ -1,9 +1,9 @@
 passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e");
 var ver = parseInt(vers.substr(1));
-// var chi_st = "";
-// var eng_st = "";
-var chi_st = html("澳門出行易祝大家新一年出入平安、路路暢通！", "#eb4335");
-var eng_st = html("Macau EasyGo wishes you all the best!", "#eb4335");
+var chi_st = "";
+var eng_st = "";
+// var chi_st = html("澳門出行易祝大家新一年出入平安、路路暢通！", "#eb4335");
+// var eng_st = html("Macau EasyGo wishes you all the best!", "#eb4335");
 
 function html(content, color){
 return '<div style="font-size:15px;line-height:20px;background:' + color + ';display:block;clear:both;color:#fff;padding:15px;font-weight:bold;">' + content + '</div>';
