@@ -39,6 +39,6 @@ function show(i){
 
 eval(showBusCurrentPos.toString()
 		.replace("tcName", "staCode")
-		.replace("resultJSON = resultJSON[0]", "resultJSON = resultJSON.data.routeInfo")
+		.replace("resultJSON = resultJSON[0]", "resultJSON = resultJSON.data")
 		.replace("[0-9]*", "[0-9]{1,}")
 )
