@@ -2,8 +2,6 @@ passedt();localStorage.removeItem("udmacau");localStorage.removeItem("udmacau_e"
 var ver = parseInt(vers.substr(1));
 var chi_st = "";
 var eng_st = "";
-var chi_st = html("4月21日起，澳門巴士全線劃一現金收費 6 澳門元。", "#f44336");
-var eng_st = html("From 21 Apr, regardless of route numbers, cash fare is MOP$6.", "#f44336");
 
 function html(content, color){
 return '<div style="font-size:15px;line-height:20px;background:' + color + ';display:block;clear:both;color:#fff;padding:15px;font-weight:bold;">' + content + '</div>';
@@ -12,12 +10,17 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 var arr = [
 ];
 
-var cur_ver = 97;
+var cur_ver = 99;
 var tmp_js = {
-	ver: "4.4.14",
+	ver: "4.4.16",
 	chi: "更新路線",
 	eng: "Update routes"
 };
+
+if(ver <= 97) {
+	chi_st = html("4月21日起，澳門巴士全線劃一現金收費 6 澳門元。", "#f44336");
+	eng_st = html("From 21 Apr, regardless of route numbers, cash fare is MOP$6.", "#f44336");
+}
 
 // r:["T344","T356"],
 // e:"From now on,<br>Rt 26 skips this stop for Bacia Norte bound. Take Rt MT4 instead.",
