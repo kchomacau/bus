@@ -17,7 +17,7 @@ var tmp_js = {
 	eng: "Update routes via San Malo"
 };
 
-if(ver <= cur_ver) {
+if(ver < cur_ver) {
 	chi_st = html("路線有大改動，請即更新至最新版。", "#f44336");
 	eng_st = html("Routes are drastically changed. Update now!", "#f44336");
 }
