@@ -10,16 +10,16 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 var arr = [
 ];
 
-var cur_ver = 99;
+var cur_ver = 100;
 var tmp_js = {
-	ver: "4.4.16",
-	chi: "更新路線",
-	eng: "Update routes"
+	ver: "4.4.17",
+	chi: "更新途經新馬路的路線",
+	eng: "Update routes via San Malo"
 };
 
-if(ver <= 97) {
-	chi_st = html("4月21日起，澳門巴士全線劃一現金收費 6 澳門元。", "#f44336");
-	eng_st = html("From 21 Apr, regardless of route numbers, cash fare is MOP$6.", "#f44336");
+if(ver <= cur_ver) {
+	chi_st = html("路線有大改動，請即更新至最新版。", "#f44336");
+	eng_st = html("Routes are drastically changed. Update now!", "#f44336");
 }
 
 // r:["T344","T356"],
