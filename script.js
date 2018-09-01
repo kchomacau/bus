@@ -8,6 +8,10 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 }
 
 var arr = [
+	{
+r:["M183","M140","M137","M135","M170"],
+e:"For Rt N3 to Taipa or Coloane, go to the stop opposite to this one.",
+c:"欲乘N3路線往氹仔或路環，請往對面巴士站上車。"}
 ];
 
 var cur_ver = 100;
@@ -17,10 +21,10 @@ var tmp_js = {
 	eng: "Update routes via San Malo"
 };
 
-if(ver < cur_ver) {
-	chi_st = html("路線有大改動，請即更新至最新版。", "#f44336");
-	eng_st = html("Routes are drastically changed. Update now!", "#f44336");
-}
+// if(ver < cur_ver) {
+// 	chi_st = html("路線有大改動，請即更新至最新版。", "#f44336");
+// 	eng_st = html("Routes are drastically changed. Update now!", "#f44336");
+// }
 
 // r:["T344","T356"],
 // e:"From now on,<br>Rt 26 skips this stop for Bacia Norte bound. Take Rt MT4 instead.",
