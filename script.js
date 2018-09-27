@@ -8,17 +8,13 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 }
 
 var arr = [
-	{
-r:["M183","M140","M137","M135","M170"],
-e:"For Rt N3 to Taipa or Coloane, go to the stop opposite to this one.",
-c:"欲乘N3路線往氹仔或路環，請往對面巴士站上車。"}
 ];
 
-var cur_ver = 100;
+var cur_ver = 101;
 var tmp_js = {
-	ver: "4.4.17",
-	chi: "更新途經新馬路的路線",
-	eng: "Update routes via San Malo"
+	ver: "4.4.18",
+	chi: "更新路線 2018-09",
+	eng: "Update routes 2018-09"
 };
 
 // if(ver < cur_ver) {
