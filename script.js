@@ -4,7 +4,7 @@ var chi_st = "";
 var eng_st = "";
 
 function html(content, color){
-return '<div style="font-size:15px;line-height:20px;background:' + color + ';display:block;clear:both;color:#fff;padding:15px;font-weight:bold;">' + content + '</div>';
+return '<div style="font-size:14px;line-height:20px;background:' + color + ';display:block;clear:both;color:#fff;padding:15px;">' + content + '</div>';
 }
 
 var arr = [
