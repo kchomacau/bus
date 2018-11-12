@@ -10,11 +10,11 @@ return '<div style="font-size:15px;line-height:20px;background:' + color + ';dis
 var arr = [
 ];
 
-var cur_ver = 101;
+var cur_ver = 103;
 var tmp_js = {
-	ver: "4.4.18",
-	chi: "更新路線 2018-09",
-	eng: "Update routes 2018-09"
+	ver: "4.4.21",
+	chi: "更新路線 2018-11",
+	eng: "Update routes 2018-11"
 };
 
 // if(ver < cur_ver) {
