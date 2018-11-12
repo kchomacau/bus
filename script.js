@@ -17,6 +17,11 @@ var tmp_js = {
 	eng: "Update routes 2018-11"
 };
 
+if(ver === cur_ver) {
+	chi_st = html("致支持者：您正在使用的這個版本將是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。 - 2018-11-12", "#607d8b");
+	eng_st = html("To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you. - 2018 Nov 12", "#607d8b");
+}
+
 // if(ver < cur_ver) {
 // 	chi_st = html("路線有大改動，請即更新至最新版。", "#f44336");
 // 	eng_st = html("Routes are drastically changed. Update now!", "#f44336");
