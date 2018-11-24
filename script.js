@@ -10,14 +10,14 @@ return '<div style="font-size:14px;line-height:20px;background:' + color + ';dis
 var arr = [
 ];
 
-var cur_ver = 103;
+var cur_ver = 110;
 var tmp_js = {
-	ver: "4.4.21",
-	chi: "更新路線 2018-11",
-	eng: "Update routes 2018-11"
+	ver: "4.4.22",
+	chi: "錯誤修復",
+	eng: "Bug Fixing"
 };
 
-if(ver === cur_ver) {
+if(ver == cur_ver) {
 	chi_st = html("致支持者：您正在使用的這個版本將是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。 - 2018-11-12", "#607d8b");
 	eng_st = html("To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you. - 2018 Nov 12", "#607d8b");
 }
