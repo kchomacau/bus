@@ -18,8 +18,8 @@ var tmp_js = {
 };
 
 if(ver == cur_ver) {
-	chi_st = html("致支持者：您正在使用的這個版本將是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。 - 2018-11-12", "#607d8b");
-	eng_st = html("To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you. - 2018 Nov 12", "#607d8b");
+	chi_st = html("端午期間新馬路巴士站臨時安排：2019年6月7日至9日 每日正午12時至晚上8時，乘搭3或3X須於「中區/殷皇子馬路」站上車，另有部分往外港或由氹仔開出之路線不停靠「亞馬喇前地」，請留意車廂告示。", "#ff9800") + html("致支持者：您正在使用的這個版本將是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。 - 2018-11-12", "#607d8b");
+	eng_st = html("San Malo bus stop temp arrangement for Dragon Boat Festival: 7-9/Jun 2019, 12pm-8pm, Rt. 3 and 3X go to [Centro/Infante D. Henrique] for boarding. Some routes towards Outer Harbour or from Taipa skip [Praca F. Amaral]. Read notices in bus for further info.", "#ff9800") + html("To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you. - 2018 Nov 12", "#607d8b");
 }
 
 // if(ver < cur_ver) {
