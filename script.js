@@ -18,8 +18,8 @@ var tmp_js = {
 };
 
 if(ver == cur_ver) {
-	chi_st = html("端午期間新馬路巴士站臨時安排：2019年6月7日至9日 每日正午12時至晚上8時，乘搭3或3X須於「中區/殷皇子馬路」站上車，另有部分往外港或由氹仔開出之路線不停靠「亞馬喇前地」，請留意車廂告示。", "#ff9800") + html("致支持者：您正在使用的這個版本將是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。 - 2018-11-12", "#607d8b");
-	eng_st = html("San Malo bus stop temp arrangement for Dragon Boat Festival: 7-9/Jun 2019, 12pm-8pm, Rt. 3 and 3X go to [Centro/Infante D. Henrique] for boarding. Some routes towards Outer Harbour or from Taipa skip [Praca F. Amaral]. Read notices in bus for further info.", "#ff9800") + html("To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you. - 2018 Nov 12", "#607d8b");
+	chi_st = html("(2018-11-12) 致支持者：您正在使用的這個版本是現階段「澳門出行易」的最後一個版本，感謝您四年以來的支持，再見。", "#607d8b");
+	eng_st = html("(2018-11-12) To Whom Loves This App: This should be the last update. Thanks for your support over these 4 years. See you.", "#607d8b");
 }
 
 // if(ver < cur_ver) {
@@ -30,6 +30,5 @@ if(ver == cur_ver) {
 // r:["T344","T356"],
 // e:"From now on,<br>Rt 26 skips this stop for Bacia Norte bound. Take Rt MT4 instead.",
 // c:"即日起<br>路線26往北灣方向不停靠本站，可改乘MT4路線。"
-
 
 for(var i=0;i<arr.length;i++){for(var j=0;j<arr[i].r.length;j++){localStorage.setItem("DATA_e_"+arr[i].r[j], '##'+arr[i].e);localStorage.setItem("DATA_" +arr[i].r[j], '##'+arr[i].c);}}if(ver < cur_ver){var link = '<a ontouchstart="localStorage.setItem(\'getgetmacau\',\'\');localStorage.setItem(\'udmacau\',\'\');localStorage.setItem(\'udmacau_e\',\'\');window.location.href=\'https://play.google.com/store/apps/details?id=com.locmacau&apk\'" class="upd-icon">';var end_link = '</a>';chi_st += link+"<b>澳門出行易 V"+tmp_js.ver+"</b><u>"+tmp_js.chi+"</u><div>檢視</div>"+end_link;eng_st += link+"<b>Macau EasyGo V"+tmp_js.ver+"</b><u>"+tmp_js.eng+"</u><div>VIEW</div>"+end_link;}if(chi_st !== ""){localStorage.setItem("udmacau", chi_st);}if(eng_st !== ""){localStorage.setItem("udmacau_e", eng_st);}window.location.reload();
